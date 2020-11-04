@@ -1,10 +1,9 @@
-const { realpathSync } = require("fs");
 
 function getMood(){
     const moods = ["angry", 'sad', 'happy', 'frantic']
     return moods [Math.floor(Math.random() * moods.length)]
 }
-class JSXDemo extends realpathSync.Component {
+class JSXDemo extends React.Component {
     render(){
         return(
             <div>
@@ -16,4 +15,4 @@ class JSXDemo extends realpathSync.Component {
     }
 }
 
-ReactDOM.render(<Hello />, document.getElementById('root'));
+ReactDOM.render(<JSXDemo />, document.getElementById('root'));
