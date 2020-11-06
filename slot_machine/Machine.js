@@ -1,21 +1,14 @@
 class Machine extends React.Component{
 
     render(){
-        
-        let whale = this.props.s1
-        let octopus = this.props.s2
-        let unicorn = this.props.s3
+        //props can't change so use const instead of let 
+        const {s1,s2,s3} = this.props;
+        const winner = (s1===s2) && (s2===s3)
 
-        let animals = [whale, octopus, unicorn]
-        console.log("animals", animals)
-
-        let randomAnimal = animals[Math.floor(Math.random()*randomAnimal.length)]
-        console.log('randomAnimal', randomAnimal)
         return(
             <div>
-                <p>{randomAnimal}</p>
-                <p>{randomAnimal}</p>
-                <p>{randomAnimal}</p>
+                <p>{this.props.s1} {this.props.s2} {this.props.s3}</p>
+                <p>{winner ? "Winner!" : "loser!"}</p>
             </div>
         )
     }
