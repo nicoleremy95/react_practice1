@@ -7,22 +7,12 @@ class App extends React.Component{
                 <Machine
                     animals = {["🐳", "🐙", "🦄"]}
                 />
-
-                {/* <Machine
-                    s1="🐳"
-                    s2="🐙"
-                    s3="🦄"
+                <Machine
+                    animals = {["🐳", "🐙", "🦄"]}
                 />
                 <Machine
-                    s1="🐳"
-                    s2="🐙"
-                    s3="🦄"
+                    animals = {["🐳", "🐙", "🦄"]}
                 />
-                <Machine
-                    s1="🐳"
-                    s2="🐙"
-                    s3="🦄"
-                /> */}
             </div>
         )
     }
