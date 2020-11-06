@@ -9,6 +9,7 @@ class App extends React.Component {
                     data = {[1,2,3,4,5]}
                     isFunny={true}
                     bangs = {2}
+                    img="https://upload.wikimedia.org/wikipedia/commons/0/0f/Grosser_Panda.JPG"
                 />
                 <Hello 
                     to="Cher" 
