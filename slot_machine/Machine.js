@@ -7,9 +7,14 @@ class Machine extends React.Component{
         let randomAnimals2 = animals[Math.floor(Math.random()*animals.length)]
         let randomAnimals3 = animals[Math.floor(Math.random()*animals.length)]
         const winner = (randomAnimals1===randomAnimals2) && (randomAnimals2===randomAnimals3)
+        
         return(
-            <div>
-                <p>{randomAnimals1} {randomAnimals2} {randomAnimals3}</p>
+            <div className="Machine">
+                <p 
+                    style={{fontSize: '50px'}}
+                >
+                {randomAnimals1} {randomAnimals2} {randomAnimals3}
+                </p>
                 <p>{winner ? "Winner!" : "loser!"}</p>
             </div>
         )
