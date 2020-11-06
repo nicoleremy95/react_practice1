@@ -1,6 +1,11 @@
 //CLASS BASED COMPONENT
 
 class Hello extends React.Component {
+	//this sets up default values if they aren't passed down from parent component
+	static defaultProps = {
+		from: "Anonymous",
+		bangs: 1
+	}
 	render() {
 		let bangs = "!".repeat(this.props.bangs)
 		return (
