@@ -2,8 +2,6 @@ class Machine extends React.Component{
 
     render(){
         //props can't change so use const instead of let 
-        // const {s1,s2,s3} = this.props;
-        // const winner = (s1===s2) && (s2===s3)
         const animals = this.props.animals
         let randomAnimals1 = animals[Math.floor(Math.random()*animals.length)]
         let randomAnimals2 = animals[Math.floor(Math.random()*animals.length)]
