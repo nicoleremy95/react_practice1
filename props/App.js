@@ -4,7 +4,6 @@ class App extends React.Component {
             <div>
                 <Hello 
                     to="Ringo" 
-                    from ="Paul" 
                     age ={3}
                     data = {[1,2,3,4,5]}
                     isFunny={true}
