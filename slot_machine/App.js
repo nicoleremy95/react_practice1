@@ -4,6 +4,7 @@ class App extends React.Component{
         return(
             <div>
                 <h1>Slot Machine!</h1>
+                {/* <Button/> */}
                 <Machine
                     animals = {["🐳", "🐙", "🦄"]}
                 />
