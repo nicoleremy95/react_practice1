@@ -7,7 +7,7 @@ class Machine extends React.Component{
         let randomAnimals2 = animals[Math.floor(Math.random()*animals.length)]
         let randomAnimals3 = animals[Math.floor(Math.random()*animals.length)]
         const winner = (randomAnimals1===randomAnimals2) && (randomAnimals2===randomAnimals3)
-        
+        const color ={backgroundColor:"purple"}
         return(
             <div className="Machine">
                 <p 
@@ -15,7 +15,17 @@ class Machine extends React.Component{
                 >
                 {randomAnimals1} {randomAnimals2} {randomAnimals3}
                 </p>
-                <p>{winner ? "Winner!" : "loser!"}</p>
+                <p
+                    style={color}
+                >
+                    {winner ? "Winner!" : "loser!"}
+                </p>
+                <p
+                    className={winner? "Machine-winner": "Machine-loser"}
+                >
+                    {winner ? "good job!" : "try again!"}
+                </p>
+
             </div>
         )
     }
