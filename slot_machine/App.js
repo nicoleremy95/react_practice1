@@ -5,6 +5,10 @@ class App extends React.Component{
             <div>
                 <h1>Slot Machine!</h1>
                 <Machine
+                    animals = {["🐳", "🐙", "🦄"]}
+                />
+
+                {/* <Machine
                     s1="🐳"
                     s2="🐙"
                     s3="🦄"
@@ -18,7 +22,7 @@ class App extends React.Component{
                     s1="🐳"
                     s2="🐙"
                     s3="🦄"
-                />
+                /> */}
             </div>
         )
     }
