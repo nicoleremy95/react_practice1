@@ -3,7 +3,7 @@ class App extends React.Component{
     render(){
         return(
             <div>
-                <Rando/>
+                <Rando maxNum={7}/>
             </div>
         )
     }
