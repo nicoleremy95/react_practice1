@@ -1,6 +1,4 @@
-import React, {Component} from 'react';
-
-class Rando extends Component{
+class Rando extends React.Component{
     constructor(props){
         super(props);
         this.state = {num:0}
@@ -14,4 +12,3 @@ class Rando extends Component{
     }
 }
 
-ReactDOM.render(<Rando/>, document.getElementById('root'))
